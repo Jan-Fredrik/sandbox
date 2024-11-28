@@ -1,0 +1,23 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .grid-container div {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .search-box {
+    grid-column: 3; /* Place it in the second column */
+    grid-row: 1;    /* Place it in the first row */
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
